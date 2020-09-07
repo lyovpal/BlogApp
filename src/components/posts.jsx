@@ -2,10 +2,7 @@ import React from "react";
 import "../styles/post.css";
 
 class Posts extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
+   render() {
     return (
       <div>
         <ul>
