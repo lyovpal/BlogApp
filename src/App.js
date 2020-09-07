@@ -40,7 +40,7 @@ class App extends React.Component {
         <Posts posts={this.state.posts}/>
         <div>Comments Block</div>
       </div>
-    )
+    );
   }
 }
 
