@@ -8,8 +8,13 @@ class Comments extends React.Component {
   render() {
     return (
       <div>
-        {this.props.comment &&
-          this.props.comment.map((item) => <li key={item.id}> {item.name}</li>)}
+        <ul>
+          <h1>Comments</h1>
+          {this.props.comment &&
+            this.props.comment.map((item) => (
+              <li key={item.id}>{item.name}</li>
+            ))}
+        </ul>
       </div>
     );
   }

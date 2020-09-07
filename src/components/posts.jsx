@@ -6,19 +6,21 @@ class Posts extends React.Component {
     super(props);
   }
   render() {
-    console.log(this.props.posts)
     return (
       <div>
-        {this.props.posts &&
-          this.props.posts.map((item) => (
-            <div
-              key={item.id}
-              className="textDecoration"
-              onClick={() => this.props.getComment(item.id)}
-            >
-              {item.title}
-            </div>
-          ))}
+        <ul>
+          <h1>Posts</h1>
+          {this.props.posts &&
+            this.props.posts.map((item) => (
+              <li
+                className="posts"
+                key={item.id}
+                onClick={() => this.props.getComment(item.id)}
+              >
+                {item.title}
+              </li>
+            ))}
+        </ul>
       </div>
     );
   }

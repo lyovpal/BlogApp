@@ -1,3 +1,8 @@
-.textDecoration {
-  
+.posts {
+  background: #99c2ff;
+}
+
+.posts:hover {
+  background: #006ce5;
+  transform: 3s;
 }
